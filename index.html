@@ -648,36 +648,37 @@
           </div><!-- End Google Maps -->
 
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="400">
-              <div class="row gy-4">
+            <form action="https://formsubmit.co/zipentertainment.09@gmail.com" method="POST" class="php-email-form" data-aos="fade-up" data-aos-delay="400">
 
+              <!-- Hidden fields -->
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+              <input type="hidden" name="_subject" value="New Message from Website!">
+          
+              <div class="row gy-4">
                 <div class="col-md-6">
-                  <!-- <label for="name-field" class="pb-2">Your Name</label> -->
                   <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
                 </div>
-
-                <div class="col-md-6 ">
-                  <!-- <label for="email-field" class="pb-2">Your Email</label> -->
+          
+                <div class="col-md-6">
                   <input type="email" class="form-control" name="email" placeholder="info@zie.com" required="">
                 </div>
-
+          
                 <div class="col-md-12">
-                  <!-- <label for="phone-field" class="pb-2">Phone Number</label> -->
-                  <input type="tel" class="form-control" name="phone" id="phone-field"  placeholder="+27 84 689 5548"  required="">
+                  <input type="tel" class="form-control" name="phone" id="phone-field" placeholder="+27 84 689 5548" required="">
                 </div>
-
+          
                 <div class="col-md-12">
                   <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
                 </div>
-
+          
                 <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
+                  <div class="loading">Sending</div>
                   <div class="error-message"></div>
                   <div class="sent-message">Your message has been sent. Thank you!</div>
-
+          
                   <button type="submit">Send Message</button>
                 </div>
-
               </div>
             </form>
           </div><!-- End Contact Form -->
